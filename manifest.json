@@ -1,11 +1,15 @@
 {
 	"manifest_version": 2,
 	"name": "To Do",
-	"version": "0.1",
+	"version": "0.2",
 	"permissions": [ ],
-    "browser_action": {
-      "default_icon": "icons/star-empty-38.png",
-      "default_title": "To Do",
-      "default_popup": "popup.html"
-    }
+  "browser_action": {
+    "default_icon": "icons/48.png",
+    "default_title": "To Do",
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "48": "icons/48.png",
+    "96": "icons/96.png"
+  }
 }
