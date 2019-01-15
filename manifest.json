@@ -1,0 +1,14 @@
+{
+	"manifest_version": 2,
+	"name": "To Do",
+	"version": "0.1",
+	"background": {
+		"scripts": [ "background.js" ]
+	},
+	"permissions": [ ],
+    "browser_action": {
+      "default_icon": "icons/star-empty-38.png",
+      "default_title": "To Do",
+      "default_popup": "popup.html"
+    }
+}
