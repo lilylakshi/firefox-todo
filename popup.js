@@ -7,13 +7,6 @@ class ToDoItem {
 
 const storageName = "toDoList";
 
-var itemsBackup = [
-    new ToDoItem("Get Coffee", "14-01-2019"),
-    new ToDoItem("Buy Tea", "21-01-2019"),
-    new ToDoItem("Drink Milk", "28-01-2019"),
-    new ToDoItem("Sleep All Day", "04-02-2019")
-];
-
 var items = [];
 
 function readListFromStorage() {
