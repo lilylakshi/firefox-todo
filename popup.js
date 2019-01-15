@@ -58,8 +58,12 @@ function populateList() {
         closeButton.addEventListener("click", removeToDo.bind(null, i), false);
     
         titleDiv.appendChild(document.createTextNode(item.title));
+        titleDiv.setAttribute("class", "title");
+
         dueDateDiv.appendChild(document.createTextNode(item.dueDate.toLocaleDateString()));
+        dueDateDiv.setAttribute("class", "dueDate");
     
+        itemDiv.setAttribute("class", "todoItem");
         itemDiv.appendChild(titleDiv);
         itemDiv.appendChild(dueDateDiv);
         itemDiv.appendChild(closeButton);
