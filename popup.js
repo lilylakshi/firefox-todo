@@ -40,14 +40,17 @@ function populateList() {
     for (var i = 0, len = items.length; i < len; i++) {
     
         var item = items[i];
+
+        var itemWrapperDiv = document.createElement("div");
+        itemWrapperDiv.setAttribute("class", "itemWrapperDiv");
     
         var li = document.createElement("li");
         var itemDiv = document.createElement("div");
         var titleDiv = document.createElement("div");
         var dueDateDiv = document.createElement("div");
 
-        var closeButton = document.createElement("button");
-        closeButton.appendChild(document.createTextNode("Remove"));
+        var closeButton = document.createElement("a");
+        closeButton.setAttribute("class", "closeButton");
         closeButton.addEventListener("click", removeToDo.bind(null, i), false);
     
         titleDiv.appendChild(document.createTextNode(item.title));
@@ -59,9 +62,11 @@ function populateList() {
         itemDiv.setAttribute("class", "todoItem");
         itemDiv.appendChild(titleDiv);
         itemDiv.appendChild(dueDateDiv);
-        itemDiv.appendChild(closeButton);
+
+        itemWrapperDiv.appendChild(itemDiv);
+        itemWrapperDiv.appendChild(closeButton);
     
-        li.appendChild(itemDiv);
+        li.appendChild(itemWrapperDiv);
     
         list.appendChild(li);
     }

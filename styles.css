@@ -3,13 +3,13 @@ body {
         "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
 }
 
-.extName {
-    font-weight: bold;
-    size: 2em;
+ul {
+  list-style-type: none;
 }
 
-.title {
+.extName {
     font-weight: bold;
+    size: 3em;
 }
 
 .dueDate {
@@ -17,6 +17,25 @@ body {
     font-size: .75em;
 }
 
+.itemWrapperDiv {
+    margin: 0 10px 20px 0;
+    padding: 0 0 10px 0;
+    border-bottom: 1px solid #777;
+    display: grid;
+    grid-template-areas: 'todoItem closeButton';
+}
+
 .todoItem {
-    margin: 0 0 10px 0;
+    text-align: left;
+}
+
+.closeButton {
+    color: #777;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #fff;
+    text-align: right;
+}
+  
+.closeButton:after {
+    content: 'X'; /* ANSI X letter */
 }
