@@ -98,7 +98,6 @@ function init() {
     populateList();
 
     var button = document.getElementById("addToDoButton");
-
     button.addEventListener("click", addToDo);
 }
 function compareFunc(a, b) {

@@ -2,7 +2,8 @@
 <html>
     <head>
         <meta charset="utf-8"/>
-        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link rel="stylesheet" type="text/css" href="css/datepicker.css">
     </head>
     <body>
         <div class="extName">To Do</div>
@@ -11,8 +12,9 @@
             </ul>
         </div>
         <input placeholder="Title" id="itemNameInput" type="text" />
-        <input placeholder="Due Date" id="dueDateInput" type="text" />
+        <input placeholder="Due Date" id="dueDateInput" class="datepicker" type="text" />
         <button id="addToDoButton">Add</button>
+        <script src="lib/datepicker.js"></script>
         <script src="popup.js"></script>
     </body>
 </html>
