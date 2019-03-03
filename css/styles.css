@@ -39,3 +39,9 @@ ul {
 .closeButton:after {
     content: 'X'; /* ANSI X letter */
 }
+
+#addToDoButton {
+  float: right;
+  clear: both;
+  margin: 8px 0px;
+}
